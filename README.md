@@ -10,8 +10,8 @@ or, inside a Julia session, do:
 
 Then you can access the functions in these modules through the command `using <module name>`.
 
-The code we'd like to call using hybrid-compute is lines 146-157 in StatePrep.jl
-Would then continue to simulate classically (the rest of the function `block_layer`), while running the chosen wiring on the quantum computer. 
+*The code we'd like to call using hybrid-compute is lines 146-157 in StatePrep.jl. Would then continue to simulate classically (the rest of the function `block_layer`), while running the chosen wiring on the quantum computer.*
+
 Required packages
 -----------------
   - `QuantumClifford` (for stabilizer formalism)
