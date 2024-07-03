@@ -142,6 +142,8 @@ function block_layer(gate, t, to_measure, erasure_sites, stabs; parity = 1)
     for i=1:length(stabs)÷2
     	ents = zeros(Int,4)
         j=1
+
+	# This is the thing I'd want to call from wasm
 	while j<=4
 	    new_stabs[i], ents[j] = pair_blocks(stabs[2*i-1:2*i], [erasure_sites[3][1][t][i], erasure_sites[4][1][t][i]], to_measure; check_gate = (j<=2), measure_type = parity, control = (j+1)%2+1)
 	    if entropies[j]==0
